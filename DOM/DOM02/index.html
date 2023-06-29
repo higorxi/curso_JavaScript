@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em DOM</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <a href="https://instagram.com.br">
+        <div id="area" onmouseenter="click_area()" onmouseout="click_area2()">
+            CLIQUE AQUI!
+        </div>
+    </a>
+    
+    <script>
+        function click_area(){
+            var a = window.document.getElementById('area')
+            a.innerText = 'Você ganhou um milhão'
+        }
+        function click_area2(){
+            var a = window.document.getElementById('area')
+            a.innerText = 'CLIQUE AQUI!'
+        }
+    </script>
+</body>
+</html>

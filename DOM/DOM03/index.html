@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>
+            Somando Valores
+        </h1>
+        <label for="">DIGITE O PRIMEIRO NÚMERO:</label>
+        <input type="number" name="txtn1" id="txtn1">
+        <br>
+        <label for="">DIGITE O SEGUNDO NÚMERO:</label>
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="SOMAR" onclick="somar()">
+        <div id="resultado">
+            O RESULTADO DA SOMA É:
+        </div>
+    </div>
+    
+    <script>
+    function somar(){
+        var t1 = window.document.getElementById('txtn1')
+        var t2 = window.document.getElementById('txtn2')
+        var n1 = Number(t1.value)
+        var n2 = Number(t2.value)
+        var s = n1 + n2 
+        var resultado = window.document.getElementById('resultado')
+        resultado.innerHTML = `O RESULTADO DA SOMA DE <strong>${n1}</strong> E <strong>${n2}</strong> É: <strong>${s}</strong>`
+    }
+    </script>
+</body>
+</html>

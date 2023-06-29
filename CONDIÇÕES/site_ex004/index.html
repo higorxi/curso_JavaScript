@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAÍSES</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>COMO É CHAMADO ALGUÉM RESIDENTE EM SEU PAÍS?</h1>
+      <label for="">QUAL O SEU PAÍS?</label>
+      <br />
+      <input type="text" name="pais" id="local" onkeyup="verificar()" />
+      <input type="button" value="VERIFICAR" />
+    </div>
+    <div id="resultado"></div>
+    <script>
+      function verificar() {
+        var pais = window.document.getElementById('local').value;
+        var resultado = window.document.getElementById('resultado');
+        if (pais === 'Brasil') {
+          resultado.innerText = `Quem vive em ${pais}, é chamado de brasileiro`;
+        } else {
+          resultado.innerHTML = `Residentes em ${pais}, são chamados aqui no Brasil de <strong>ESTRANGEIROS</strong>`;
+        }
+      }
+    </script>
+  </body>
+</html>

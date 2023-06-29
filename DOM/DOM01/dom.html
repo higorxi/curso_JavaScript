@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de DOM</title>
+    <link rel="stylesheet" href="/DOM/DOM01/style.css">
+</head>
+<body>
+    <h1>Aprendendo o que é DOM</h1>
+    <p>
+        O DOM (Document Object Model) é a representação de dados dos objetos que compõem a estrutura e o conteúdo de um documento na Web. Neste guia, apresentaremos brevemente o DOM. Veremos como o DOM representa um documento HTML ou XML na memória e como você usa APIs para criar aplicativos e conteúdo da Web.
+    </p>
+
+    <div class="card">
+        LOUCURA
+    </div>
+    <script>
+        var texto = document.getElementsByTagName('h1')[0]
+        texto.style.background = 'blue'
+        var card = document.getElementsByClassName('card')[0]
+        card.style.background = 'black'
+    </script>
+</body>
+</html>
