@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightsteelblue;
+    font: 10pt normal Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.783);
+}
+section{
+    background-color: white;
+    width: 50vw;
+    max-width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.382);
+}
+
+#msg{
+    font-size: larger;
+    color: black;
+}
+
+#imagens{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    padding-top: 15px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+footer > p{
+    text-decoration: none;
+}
