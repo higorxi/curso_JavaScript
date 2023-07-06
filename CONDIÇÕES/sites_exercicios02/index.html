@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <id id="">
+            <p>Insira seu ano de nascimento:
+            <input type="number" name="txtano" id="txtano" min="1"></p>
+            <p id="sex_list">Sexo:
+                <input type="radio" name="radsex" id="masc">
+                <label for="masc">Masculino</label>
+                <br>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+                <br>
+                <input type="radio" name="radsex" id="outros">
+                <label for="outros">Outros</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()" class="button"">
+            </p>
+        </id>
+        <id id="resultado">
+            Prencha os dados para ver o resultado
+            <div id="img">
+
+            </div>
+        </id>
+    </section>
+
+    <footer>
+        <a href="https://github.com/higorxi">©higorxi</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #546EEA;
+}
+header{
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+section{
+    background-color: white;
+    width: 30rem;
+    height: 15rem;
+    margin: auto;
+    border-radius: 15px 15px 15px;
+}
+
+#inputs{
+    justify-content: center;
+}
+
+#calcular{
+    margin-top: 20px;
+}
+section div{
+    display: grid;
+}
+
+#resultado{
+    color: black;
+    background-color: white;
+    font-size: 30pt;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    margin: 15px;
+}
