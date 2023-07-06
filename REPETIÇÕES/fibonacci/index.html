@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        FIBONACCI DO
+        <div id="marca">HG</div>
+      </h1>
+    </header>
+    <section>
+      <div>
+        <p>
+          Digite um número:
+          <input type="number" id="number" min="1" required onkeypress="verificarKey(this)"/>
+        </p>
+        <input type="button" value="GERAR" onclick="multiplicar()" id="botão" />
+      </div>
+      <div id="resultado" style="display: none" ;>Sequencia:
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+  <script src="script.js"></script>
+</html>
